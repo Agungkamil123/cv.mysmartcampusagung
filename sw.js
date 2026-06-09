@@ -1,6 +1,6 @@
 (self => {
   // 1. Ganti nama versi cache ke v2 agar browser tahu ada perubahan besar
-  const CACHE_NAME = 'cv-dimas-v2';
+  const CACHE_NAME = 'cv-Agung-v2';
   const assetsToCache = [
     '/',
     '/index.html'
