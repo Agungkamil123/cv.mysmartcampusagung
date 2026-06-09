@@ -1,10 +1,11 @@
-const CACHE_NAME = "Cv-cache-v2";
+const CACHE_NAME = "cv-cache-v3";
 
 const urlsToCache = [
     "./",
+    "./index.html",
     "./manifest.json",
-    "./assets/img/unj-192.png",
-    "./assets/img/unj-512.png"
+    "./unj-192.png",
+    "./unj-512.png"
 ];
 
 self.addEventListener("install", event => {
@@ -23,11 +24,11 @@ self.addEventListener("fetch", event => {
 
 self.addEventListener("activate", event => {
     event.waitUntil(
-        caches.keys().then(keys => {
+        caches.keys().then(cacheNames => {
             return Promise.all(
-                keys.map(key => {
-                    if (key !== CACHE_NAME) {
-                        return caches.delete(key);
+                cacheNames.map(cache => {
+                    if (cache !== CACHE_NAME) {
+                        return caches.delete(cache);
                     }
                 })
             );
