@@ -1,14 +1,14 @@
 {
-    "name": "CV Dimas Luqmanul Hakim",
-    "short_name": "CV Dimas",
-    "description": "Portfolio & Resume Dimas Luqmanul Hakim - Kompterisasi Akuntansi",
+    "name": "CV Agung Saipul Kamil",
+    "short_name": "IT Campus",
+    "description": "Portfolio & Resume Agung Saipul Kamil - Kompterisasi Akuntansi",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#2c3e50",
     "icons": [
       {
-        "src": "apk.jpeg",
+        "src": "unj.png",
         "sizes": "192x192",
         "type": "image/png"
       },
