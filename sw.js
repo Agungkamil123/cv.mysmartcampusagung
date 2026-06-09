@@ -1,4 +1,4 @@
-const CACHE_NAME = "cv-cache-v3";
+const CACHE_NAME = "cv-cache-v5";
 
 const urlsToCache = [
     "./",
