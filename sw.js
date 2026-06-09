@@ -1,12 +1,10 @@
-const CACHE_NAME = "Cv agung-cache-v";
+const CACHE_NAME = "Cv-cache-v2";
 
 const urlsToCache = [
     "./",
-    "./index.html",
     "./manifest.json",
-    ".unj.png",
-    ".unj.png",
-    ".unj.png"
+    "./assets/img/unj-192.png",
+    "./assets/img/unj-512.png"
 ];
 
 self.addEventListener("install", event => {
@@ -19,9 +17,7 @@ self.addEventListener("install", event => {
 self.addEventListener("fetch", event => {
     event.respondWith(
         caches.match(event.request)
-            .then(response => {
-                return response || fetch(event.request);
-            })
+            .then(response => response || fetch(event.request))
     );
 });
 
